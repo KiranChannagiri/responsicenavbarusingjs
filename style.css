@@ -1,0 +1,164 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Maps', system-ui;
+}
+body 
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( to top right,  rgba(84,212,228,1) , rgba(68,36,164,1));
+}
+header 
+{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navheading 
+{
+    animation: navheading 10s  infinite ;
+    color: white;
+    font-size: 4rem;
+}
+@keyframes navheading{
+    0%
+    {
+        color: white;
+    }
+    10%
+    {
+        color: deeppink;
+    }
+    20%
+    {
+        color: coral;
+    }
+    30% 
+    {
+        color:tomato;
+    }
+    40%
+    {
+        color: red;
+    }
+    50%
+    {
+        color: gold;
+    }
+    60%
+    {
+        color:rgb(0, 255, 0);
+    }
+    70%
+    {
+        color: cyan;
+    }
+    80%
+    {
+        color:mediumspringgreen;
+    }
+    90% 
+    {
+        color: crimson;
+    }
+    100% 
+    {
+        color: white;
+    }
+};
+nav .menu
+{
+    display: flex;
+}
+nav .menu div 
+{
+    display: inline;
+}
+nav .menu a 
+{
+    text-decoration: none;
+   color: white;
+   font-size: 1.4rem;
+   padding: 10px;
+   transition: 0.4s all ease-in;
+   border-radius: 10px;
+   margin: 0px 10px;
+}
+nav .menu a:hover 
+{
+    color: black;
+    background-color: white;
+}
+.hamburger 
+{
+    color: white;
+    font-size: 1.4rem;
+    display: none;
+}
+@media only  screen and ( max-width:800px) and (min-width:640px){
+  nav 
+  {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    transition: 0.3s all;
+    height: 180px;
+    background-color: black;
+    display: none;
+  }
+  nav .menu div 
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+nav .menu div a 
+  {
+    opacity: 1;
+  }
+  .hamburger 
+  {
+    display: block;
+  }
+}
+@media only screen and (min-width:768px ) and (max-width:800px)
+{
+    nav 
+    {
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      right: 0px;
+      width: 100vw;
+      transition: 0.3s all;
+      height: 180px;
+      background-color: black;
+      display: none;
+    }
+    nav .menu div 
+  {
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  nav .menu div a 
+  {
+    opacity: 1;
+  }
+  .hamburger 
+  {
+    display: block;
+  }
+}
+/* class for js  */
+.dblock{
+    display: block;
+} 
